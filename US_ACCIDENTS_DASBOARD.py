@@ -10,7 +10,7 @@ import plotly.express as px
 import plotly.express.colors as colors
 import datetime
 
-df = pd.read_csv('US_ACCIDENTS_2020.csv')
+df = pd.read_csv('US_Accidents_2020.csv')
 
 # we will create a counter column for calculating the accident each time based on unique states
 df['accident_count'] = 1
