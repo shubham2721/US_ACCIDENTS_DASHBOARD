@@ -191,4 +191,4 @@ def option(selection, time, category, n):
         fig2.update_traces(textinfo = "label+text+value")
     return fig, fig1, fig2
 if __name__ =='__main__':
-    app.run_server(port = 4050)
+    app.run_server(debug = True)
