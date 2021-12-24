@@ -1,14 +1,11 @@
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import plotly.express as px
-import plotly.express.colors as colors
-import datetime
 
 df = pd.read_csv('US_Accidents_2020.csv')
 
@@ -191,4 +188,4 @@ def option(selection, time, category, n):
         fig2.update_traces(textinfo = "label+text+value")
     return fig, fig1, fig2
 if __name__ =='__main__':
-    app.run_server(debug = True)
+    app.run_server(port = 4050)
