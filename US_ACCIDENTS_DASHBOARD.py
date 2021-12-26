@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
@@ -188,4 +187,4 @@ def option(selection, time, category, n):
         fig2.update_traces(textinfo = "label+text+value")
     return fig, fig1, fig2
 if __name__ =='__main__':
-    app.run_server(port = 4050)
+    app.run_server()
